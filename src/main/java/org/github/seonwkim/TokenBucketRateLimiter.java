@@ -6,11 +6,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class TokenBucketRateLimiter implements RateLimiter {
 
-    private long bucketSize;
-    private double tokenFillRatePerMilli;
-    private AtomicLong lastFillTimeMillis;
-    private AtomicLong tokenCount;
-    private ReentrantLock lock;
+    private final long bucketSize;
+    private final double tokenFillRatePerMilli;
+    private final AtomicLong lastFillTimeMillis;
+    private final AtomicLong tokenCount;
+    private final ReentrantLock lock;
 
     /**
      * 10 tokens per second -> tokenFillRate should be 10, TimeUnit should be Seconds
