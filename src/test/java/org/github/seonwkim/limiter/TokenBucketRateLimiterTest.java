@@ -1,4 +1,4 @@
-package org.github.seonwkim;
+package org.github.seonwkim.limiter;
 
 import org.junit.jupiter.api.Test;
 

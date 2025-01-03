@@ -1,10 +1,10 @@
-package org.github.seonwkim;
+package org.github.seonwkim.limiter;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantLock;
 
-class TokenBucketRateLimiter implements RateLimiter {
+public class TokenBucketRateLimiter implements RateLimiter {
 
     private final long bucketSize;
     private final double tokenFillRatePerMilli;

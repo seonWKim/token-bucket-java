@@ -1,4 +1,4 @@
-package org.github.seonwkim;
+package org.github.seonwkim.limiter;
 
 /**
  * 요구사항
